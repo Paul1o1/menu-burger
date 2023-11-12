@@ -10558,7 +10558,12 @@ h2 a.logo {
   display: grid;
   grid-auto-flow: column;
   grid-gap: 8px; }
-
+.footer-text{
+  margin-top:100px;
+}
+.contact-info{
+  margin-top:100px;
+}
 .footer-text p,
 .footer-text p a,
 .contact-info p {

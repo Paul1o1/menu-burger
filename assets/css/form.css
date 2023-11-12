@@ -3,6 +3,8 @@
     height: 32px;
     transition: .6s all;
   }
+  
+  
   #rating {
     cursor: pointer;
     display: inline-block
