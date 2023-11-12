@@ -1,7 +1,4 @@
-<!--
-Author: W3layouts
-Author URL: http://w3layouts.com
--->
+
 <!doctype html>
 <html lang="en">
   
@@ -11,12 +8,14 @@ Author URL: http://w3layouts.com
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <title>Burger Bun| Menu </title>
+    <title>Sheger Burger| Menu </title>
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
 
     <link href="http://fonts.googleapis.com/css2?family=Dosis:wght@300;400;500;600;800&amp;display=swap" rel="stylesheet">
 
     <!-- Template CSS -->
     <link rel="stylesheet" href="assets/css/style-liberty.css">
+    <link rel="stylesheet" href="assets/css/form.css">
   </head>
   <body>
 
@@ -71,27 +70,7 @@ if(typeof _bsa !== 'undefined' && _bsa) {
 
 
 
-.toggle-right-sidebar span {
-  background: #0D1326;
-  width: 50px;
-  height: 50px;
-  line-height: 50px;
-  text-align: center;
-  color: #e6ebff;
-  border-radius: 50px;
-  font-size: 26px;
-  cursor: pointer;
-  opacity: .5;
-}
-.pull-right {
-  float: right;
-  position: fixed;
-  right: 0px;
-  top: 70px;
-  width: 90px;
-  z-index: 99999;
-  text-align: center;
-}
+
 
 
 
@@ -117,7 +96,7 @@ if(typeof _bsa !== 'undefined' && _bsa) {
   <div class="container">
       <nav class="navbar navbar-expand-lg stroke px-0">
           <h1> <a class="navbar-brand" href="index.html">
-              <img src="assets/images/burger.png" alt="burger logo"width="35px" /> Burger Bun
+              <img src="assets/images/burger.png" alt="burger logo"width="35px" /> sheger burger
               </a></h1>
           <!-- if logo is image enable this   
   <a class="navbar-brand" href="#index.html">
@@ -145,9 +124,14 @@ if(typeof _bsa !== 'undefined' && _bsa) {
   </div>
 </header>
 <!--/header-->
-<section class="w3l-about-breadcrumb">
+<section class="w3l-about-breadcrumb" style="position: relative;">
+   
+    <div class="snow"></div>
+    <div class="snow2"></div>
     <div class="breadcrumb-bg breadcrumb-bg-about py-5">
-        <div class="container py-lg-5 py-md-3">
+      
+        <div class="container py-lg-5 py-md-3" ">
+           
             <h2 class="title">Menu items</h2>
         </div>
     </div>
@@ -468,17 +452,72 @@ if(typeof _bsa !== 'undefined' && _bsa) {
 <footer class="py-5">
   <div class="container py-xl-4">
     <div class="row footer-top">
+        <!-- form section -->
+        <div class="container">
+            <p>
+              We strive to provide the best possible service for our clients. Please leave a review to let us know how we are doing and to share your experience with others.
+            </p>
+            <form id="review-form" action="index.html" method="post">
+              <h2>Write Your Review</h2>
+              <div id="rating">
+                <svg class="star" id="1" viewBox="0 12.705 512 486.59" x="0px" y="0px" xml:space="preserve" style="fill: #f39c12;">
+                  <polygon points="256.814,12.705 317.205,198.566 512.631,198.566 354.529,313.435 414.918,499.295 256.814,384.427 98.713,499.295 159.102,313.435 1,198.566 196.426,198.566"></polygon>
+                </svg>
+                <svg class="star" id="2" viewBox="0 12.705 512 486.59" x="0px" y="0px" xml:space="preserve" style="fill: #f39c12;">
+                  <polygon points="256.814,12.705 317.205,198.566 512.631,198.566 354.529,313.435 414.918,499.295 256.814,384.427 98.713,499.295 159.102,313.435 1,198.566 196.426,198.566"></polygon>
+                </svg>
+                <svg class="star" id="3" viewBox="0 12.705 512 486.59" x="0px" y="0px" xml:space="preserve" style="fill: #f39c12;">
+                  <polygon points="256.814,12.705 317.205,198.566 512.631,198.566 354.529,313.435 414.918,499.295 256.814,384.427 98.713,499.295 159.102,313.435 1,198.566 196.426,198.566"></polygon>
+                </svg>
+                <svg class="star" id="4" viewBox="0 12.705 512 486.59" x="0px" y="0px" xml:space="preserve" style="fill: #f39c12;">
+                  <polygon points="256.814,12.705 317.205,198.566 512.631,198.566 354.529,313.435 414.918,499.295 256.814,384.427 98.713,499.295 159.102,313.435 1,198.566 196.426,198.566"></polygon>
+                </svg>
+                <svg class="star" id="5" viewBox="0 12.705 512 486.59" x="0px" y="0px" xml:space="preserve" style="fill: #808080;">
+                  <polygon points="256.814,12.705 317.205,198.566 512.631,198.566 354.529,313.435 414.918,499.295 256.814,384.427 98.713,499.295 159.102,313.435 1,198.566 196.426,198.566"></polygon>
+                </svg>
+              </div>
+              <span id="starsInfo" class="help-block">
+                Click on a star to change your rating 1 - 5, where 5 = great! and 1 = really bad
+              </span>
+              <div class="form-group">
+                <label class="control-label" for="review">Your Review:</label>
+                <textarea class="form-control" rows="10" placeholder="Your Reivew" name="review" id="review"></textarea>
+                <span id="reviewInfo" class="help-block pull-right">
+                  <span id="remaining">999</span> Characters remaining
+                </span>
+              </div>
+              <h2>Your Info:</h2>
+              <div class="form-group">
+                <label for="name">Name:</label>
+                <input class="form-control" type="text" placeholder="Name" name="name" id="name" value="">
+              </div>
+              <div class="form-group">
+                <label for="city">City:</label>
+                <input class="form-control" type="text" placeholder="City" name="city" id="city" value="">
+              </div>
+              <div class="form-group">
+                <label for="email">Email:</label>
+                <input class="form-control" type="text" placeholder="Email" name="email" id="email" value="">
+              </div>
+              <a href="#" id="submit" class="btn btn-primary">Submit</a>
+              <input id="submitForm" type="submit" style="display:none;">
+              <span id="submitInfo" class="help-block">
+                By clicking <strong>Submit</strong>, I authorize the sharing of my name and review on the web. (email will not be shared)
+              </span>
+            </form>
+            <h2>Read what others have said about us:</h2>
+            <div id="review-container">
+            </div>
+            </div>
       <div class="col-lg-4 footer-grid_section_1its footer-text">
         <!-- logo -->
         <h2>
           <a class="logo text-wh" href="index.html">
-            <img src="assets/images/burger.png" alt="burger logo" width="35px" /> Burger Bun
+            <img src="assets/images/burger.png" alt="burger logo" width="35px" /> Sheger burger
           </a>
         </h2>
         <!-- //logo -->
-        <p class="mt-lg-4 mt-3 mb-4 pb-lg-2">We are dedicated to the safety of our guests and employees and have updated
-          our safety measures. We believe in Simple, Creative, Modern and Flexible Design Standards with a Retina and Responsive Approach.
-          Browse the amazing Features this template offers.</p>
+        <p class="mt-lg-4 mt-3 mb-4 pb-lg-2">Welcome to our burger restaurant! We are a premier dining establishment dedicated to serving delicious, high-quality burgers that will satisfy even the most discerning taste buds. Our passion for great food and exceptional service sets us apart, making us a favorite destination for burger lovers.</p>
         <!-- social icons -->
         <ul class="top-right-info">
           <li>
@@ -512,9 +551,9 @@ if(typeof _bsa !== 'undefined' && _bsa) {
           <h3>Contact Us</h3>
         </div>
         <div class="footer-text mt-4">
-          <p><strong>Address :</strong> Burger Bun, 208 Trainer Avenue street, Corner
-            Market, NY - 62617.</p>
-          <p class="my-2"><strong>Phone :</strong> <a href="tel:+12 534894364">+12 534894364</a></p>
+          <p><strong>Address :</strong> Burger Bun, bole rwanda street, Addis Ababa
+            </p>
+          <p class="my-2"><strong>Phone :</strong> <a href="tel:+251 934 894 364">tel:+251 934 894 364</a></p>
           <p><strong>Email :</strong> <a href="https://p.w3layouts.com/cdn-cgi/l/email-protection#cfa6a1a9a08faab7aea2bfa3aae1aca0a2"><span class="__cf_email__" data-cfemail="e980878f86a98c91888499858cc78a8684">[email&#160;protected]</span></a></p>
         </div>
       
@@ -526,35 +565,16 @@ if(typeof _bsa !== 'undefined' && _bsa) {
 <!-- //footer -->
 <!-- copyright -->
 <div class="cpy-right text-center py-4">
-  <p>© 2020 Burger Bun. All rights reserved | Design by <a href="#">rendo Creatives</a> </p>
+  <p>© 2020 Sheger Burger. All rights reserved | Design by <a href="#">rendo Creatives</a> </p>
 </div>
 <!-- //copyright -->
 
- <!-- move top -->
- <button onclick="topFunction()" id="movetop" title="Go to top">
-  <span class="fa fa-level-up" aria-hidden="true"></span>
-</button>
-<script data-cfasync="false" src="../../../../../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
-  // When the user scrolls down 20px from the top of the document, show the button
-  window.onscroll = function () {
-    scrollFunction()
-  };
 
-  function scrollFunction() {
-    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-      document.getElementById("movetop").style.display = "block";
-    } else {
-      document.getElementById("movetop").style.display = "none";
-    }
-  }
+ 
 
-  // When the user clicks on the button, scroll to the top of the document
-  function topFunction() {
-    document.body.scrollTop = 0;
-    document.documentElement.scrollTop = 0;
-  }
-</script>
-<!-- /move top -->
+
+  
+
 
 <script src="assets/js/jquery-3.3.1.min.js"></script> <!-- Common jquery plugin -->
 
@@ -673,5 +693,5 @@ if(typeof _bsa !== 'undefined' && _bsa) {
 
 <script>(function(){var js = "window['__CF$cv$params']={r:'8202ecabda3711ac',t:'MTY5ODk5Njc1OC45MDkwMDA='};_cpo=document.createElement('script');_cpo.nonce='',_cpo.src='../../../../../../cdn-cgi/challenge-platform/h/b/scripts/jsd/61b90d1d/main.js',document.getElementsByTagName('head')[0].appendChild(_cpo);";var _0xh = document.createElement('iframe');_0xh.height = 1;_0xh.width = 1;_0xh.style.position = 'absolute';_0xh.style.top = 0;_0xh.style.left = 0;_0xh.style.border = 'none';_0xh.style.visibility = 'hidden';document.body.appendChild(_0xh);function handler() {var _0xi = _0xh.contentDocument || _0xh.contentWindow.document;if (_0xi) {var _0xj = _0xi.createElement('script');_0xj.innerHTML = js;_0xi.getElementsByTagName('head')[0].appendChild(_0xj);}}if (document.readyState !== 'loading') {handler();} else if (window.addEventListener) {document.addEventListener('DOMContentLoaded', handler);} else {var prev = document.onreadystatechange || function () {};document.onreadystatechange = function (e) {prev(e);if (document.readyState !== 'loading') {document.onreadystatechange = prev;handler();}};}})();</script></body>
 
-
+<script src="assets/js/form.js"></script>
 </html>
